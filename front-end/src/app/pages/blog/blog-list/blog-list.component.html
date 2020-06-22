@@ -1,0 +1,17 @@
+<h2 class="mb-4">Posts</h2>
+<div class="row mt-2">
+  <div *ngFor="let item of items?.results" class="col-4 mb-4">
+    <a [routerLink]="['/blog', item.slug]">
+      <div class="card h-100">
+        <img
+          [src]="item.img.img"
+          class="card-img-top w-100"
+          [alt]="item.img.title"
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ item.title }}</h5>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

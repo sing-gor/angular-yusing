@@ -1,0 +1,16 @@
+<div class="site-sidebar site-sidebar-bottom" [class.active]="display">
+  <nav class="nav nav-pills flex-column flex-sm-row">
+    <a class="flex-fill text-center nav-link active" [routerLink]="['']"
+      ><i class="fa fa-home" aria-hidden="true"></i> Home</a
+    >
+    <a class="flex-fill text-center nav-link" [routerLink]="['/blog']"
+      ><i class="fa fa-book" aria-hidden="true"></i> Posts</a
+    >
+    <a class="flex-fill text-center nav-link disabled" href="#"
+      ><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Series</a
+    >
+    <a class="flex-fill text-center nav-link" [routerLink]="['/about']"
+      ><i class="fa fa-address-card" aria-hidden="true"></i> About</a
+    >
+  </nav>
+</div>

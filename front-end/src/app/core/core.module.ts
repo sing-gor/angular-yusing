@@ -10,12 +10,10 @@ import { LayoutModule } from '../layout/layout.module';
   declarations: [],
   imports: [
     BrowserModule,
-
     HttpClientModule,
     BrowserAnimationsModule,
     ServicesModule,
     PagesModule,
-    LayoutModule,
     AppRoutingModule,
   ],
   exports: [LayoutModule, AppRoutingModule],

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/components/layout/layout.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,16 @@ const routes: Routes = [
         path: '',
         loadChildren: () =>
           import('./pages/home/home.module').then((m) => m.HomeModule),
+      },
+      {
+        path: 'blog',
+        loadChildren: () =>
+          import('./pages/blog/blog.module').then((m) => m.BlogModule),
+      },
+      {
+        path: 'about',
+        loadChildren: () =>
+          import('./pages/about/about.module').then((m) => m.AboutModule),
       },
       // {
       //   path: 'css',
@@ -25,6 +36,7 @@ const routes: Routes = [
       //   loadChildren: () =>
       //     import('./feature/charts/charts.module').then((m) => m.ChartsModule),
       // },
+      { path: '**', component: HomeComponent },
     ],
   },
 ];

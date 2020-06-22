@@ -1,0 +1,24 @@
+<div class="site-sidebar site-sidebar-right" [class.active]="display">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5>Categories</h5>
+      <hr />
+
+      <a
+        *ngFor="let item of categoryData"
+        [routerLink]="['/blog']"
+        [queryParams]="{ category: item.slug }"
+        [innerHTML]="item.body | safeHtml"
+      ></a>
+
+      <h5 class="mt-4">Tags</h5>
+      <hr />
+      <a
+        *ngFor="let item of tagData"
+        [routerLink]="['/blog']"
+        [queryParams]="{ tags: item.slug }"
+        [innerHTML]="item.body | safeHtml"
+      ></a>
+    </div>
+  </div>
+</div>

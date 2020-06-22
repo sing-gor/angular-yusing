@@ -1,0 +1,12 @@
+.site-sidebar-right {
+  top: 0;
+  right: 0;
+  width: 20em;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1007;
+  transform: translateX(100%);
+}
+.active.site-sidebar-right {
+  transform: translateX(0);
+}

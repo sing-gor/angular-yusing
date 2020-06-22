@@ -1,13 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap-reboot.css";
-@import "~primeicons/primeicons.css";
-@import "~primeng/resources/themes/nova-light/theme.css";
-@import "~primeng/resources/primeng.min.css";
-@import "~bootstrap/dist/css/bootstrap-grid.css";
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "font-awesome-4.7.0/css/font-awesome.min.css";
+@import "label.min.css";
 html,
 body {
   height: 100%;
@@ -31,4 +25,94 @@ a:hover {
 }
 .text-center {
   text-align: center;
+}
+.site-sidebar {
+  position: fixed;
+  transition: transform 0.3s;
+  z-index: 10000;
+  opacity: 1;
+}
+.site-mask {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+.site-mask.active {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1005;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.code-toolbar {
+  position: relative;
+}
+.site-badge {
+  height: 0;
+}
+.ui.ribbon.label {
+  position: absolute;
+  top: 0.5rem;
+  z-index: 2;
+  margin-left: -1rem;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.code-toolbar:hover .ui.ribbon.label {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.sing-python {
+  background-color: #4bcffa !important;
+  border-color: #4bcffa !important;
+  color: #fff !important;
+}
+.sing-html {
+  background-color: #ffa801 !important;
+  border-color: #ffa801 !important;
+  color: #fff !important;
+}
+.sing-bash {
+  background-color: #ffdd59 !important;
+  border-color: #ffdd59 !important;
+  color: #1e272e !important;
+}
+.sing-sql {
+  background-color: #ff5e57 !important;
+  border-color: #ff5e57 !important;
+  color: #fff !important;
+}
+.sing-ruby {
+  background-color: #ff3f34 !important;
+  border-color: #ff3f34 !important;
+  color: #fff !important;
+}
+.sing-css {
+  background-color: #05c46b !important;
+  border-color: #05c46b !important;
+  color: #fff !important;
+}
+.sing-javascript {
+  background-color: #ffc048 !important;
+  border-color: #ffc048 !important;
+  color: #fff !important;
+}
+.sing-elixir {
+  background-color: #be2edd !important;
+  border-color: #be2edd !important;
+  color: #fff !important;
+}
+.sing-go {
+  background-color: #7ed6df !important;
+  border-color: #7ed6df !important;
+  color: #fff !important;
+}
+.sing-ts {
+  background-color: #4834d4 !important;
+  border-color: #4834d4 !important;
+  color: #fff !important;
 }
